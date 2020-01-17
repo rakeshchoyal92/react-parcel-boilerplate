@@ -1,0 +1,56 @@
+{
+  "name": "app-ease",
+  "version": "0.0.1",
+  "description": "Appease",
+  "main": "index.js",
+  "author": "Berkay Aydin <sbayd06@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "parcel public/index.html",
+    "format": "prettier --write \"src/*.+(js|json|jsx|css|md)\"",
+    "eslint-check": "eslint --print-config src/main.js | eslint-config-prettier-check"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "lodash": "4.17.10",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-redux": "7.1.3",
+    "react-router": "5.1.2",
+    "react-router-dom": "5.1.2",
+    "redux": "4.0.5",
+    "redux-devtools-extension": "2.13.8",
+    "redux-logger": "3.0.6",
+    "redux-thunk": "2.3.0",
+    "reselect": "3.0.1",
+    "src": "1.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "autoprefixer": "8.6.2",
+    "babel-plugin-module-resolver": "4.0.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "eslint": "4.19.1",
+    "eslint-config-prettier": "6.9.0",
+    "eslint-import-resolver-babel-module": "5.1.1",
+    "eslint-plugin-import": "2.20.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.9.1",
+    "eslint-plugin-react-hooks": "2.3.0",
+    "husky": "4.0.10",
+    "mocha": "5.2.0",
+    "node-sass": "4.13.0",
+    "parcel-bundler": "1.8.1",
+    "postcss-modules": "1.1.0",
+    "prettier": "1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
