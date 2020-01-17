@@ -12,19 +12,3 @@ Includes
 - Mocha for Testing
 
 Lets start!
-
-1.  Clone Repo
-
-    git clone https://github.com/sbayd/react-parcel-boilerplate.git
-
-2)  Install Dependencies
-
-
-    yarn install or npm install
-
-3.  Run!
-
-
-    yarn start or npm run start
-
-You can always contact me via sbayd06@gmail.com
