@@ -5,7 +5,7 @@ import { setName } from './store/actions/ui_actions'
 function Layout(props) {
   const { dispatchSetName } = props
 
-  return <h1 style={{ backgroundColor: 'orange' }}>haha</h1>
+  return <h1>index.js</h1>
 }
 
 const mapStateToProps = state => {

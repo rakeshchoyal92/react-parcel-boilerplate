@@ -1,3 +1,7 @@
+const path = require('path')
+const projectPath = path.resolve(__dirname, './')
+const pathToSrc = path.resolve(projectPath, 'src')
+
 module.exports = {
   parser: 'babel-eslint',
   env: {
@@ -46,6 +50,8 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn' // Checks effect dependencies
   },
   settings: {
-    react: { version: 'detect' }
+    'import/resolver': {
+      'babel-module': {}
+    }
   }
 }
