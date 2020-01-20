@@ -1,16 +1,15 @@
-// SIMPLE REDUCER
-import { UI_ACTIONS } from '../../constants/action_types'
+import produce from 'immer'
 
-export default (
-  state = { count: 1, userName: 'Berkay Aydin', webSite: 'http://sbaydin.com' },
-  action
-) => {
+const initialState = { object: 'value' }
+
+function reducer(state = initialState, action) {
   switch (action.type) {
-    case UI_ACTIONS.UPDATE_NAME:
-      return { ...state, userName: action.data }
-    case UI_ACTIONS.INCREMENT_COUNT:
-      return { ...state, count: action.data }
+    case 'SAMPLE':
+      state.object = action.data
+      return
     default:
       return state
   }
 }
+
+export default produce(reducer, initialState)
